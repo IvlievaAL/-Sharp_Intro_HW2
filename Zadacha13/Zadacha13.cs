@@ -3,11 +3,14 @@
 System.Console.WriteLine("Enter number: ");
 string StrN = System.Console.ReadLine();
 int number = Convert.ToInt32(StrN);
-int Ndigits;
-int count=0;
-while (Math.Abs(number)/10>0,1|number==0)
+int absnumber=Math.Abs(number);
+int Ndigits=1;
+int Ndivided=(absnumber/10);
+while (Ndivided>=1)
    {
-    Ndigits++;
-    count++;
+      Ndigits++;
+      Ndivided=Ndivided/10;
+      System.Console.WriteLine("итерация");
    }
-System.Console.WriteLine("works");
+System.Console.WriteLine("цикл завершен");
+System.Console.WriteLine(Ndigits);
