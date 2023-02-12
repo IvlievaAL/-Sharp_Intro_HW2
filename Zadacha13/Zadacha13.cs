@@ -10,7 +10,4 @@ while (Ndivided>=1)
    {
       Ndigits++;
       Ndivided=Ndivided/10;
-      System.Console.WriteLine("итерация");
    }
-System.Console.WriteLine("цикл завершен");
-System.Console.WriteLine(Ndigits);
