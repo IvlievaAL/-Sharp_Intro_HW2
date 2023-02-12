@@ -11,3 +11,15 @@ while (Ndivided>=1)
       Ndigits++;
       Ndivided=Ndivided/10;
    }
+int[] arrayN=new int[Ndigits];
+int index=Ndigits-1;
+int Ndivided1=(absnumber%10);
+while (index>=0)
+   {
+      arrayN[index]=Ndivided1;
+      Ndivided1=Ndivided1/10;
+      index=index-1;
+      System.Console.WriteLine("итерация");
+   }
+   var str = string.Join(" , ", arrayN);
+   Console.WriteLine(str);
