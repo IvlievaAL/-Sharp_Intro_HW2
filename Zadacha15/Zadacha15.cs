@@ -6,7 +6,14 @@ string StrD = System.Console.ReadLine();
 int Day = Convert.ToInt32(StrD);
 if (Day>0&Day<8)
   {
-    System.Console.WriteLine("day of the week: ");
+    if (Day<6)
+      {
+        System.Console.WriteLine("No");
+      }
+    else
+      {
+        System.Console.WriteLine("Yes");
+      }
   }
 else
   {
